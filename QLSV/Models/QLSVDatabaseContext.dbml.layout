@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLSVDatabaseContext">
+  <DataContextMoniker Name="/QLSVDatabaseContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5170bc18-7cb4-4f93-86d7-b332e9c59283" absoluteBounds="8.75, 0.875, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/QLSVDatabaseContextDataContext/KetQua" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d528c49f-22f6-496f-a4de-61647bfd295e" absoluteBounds="8.765, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0081f015-c082-4d96-b454-3307977e231b" absoluteBounds="0.5, 0.875, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/QLSVDatabaseContextDataContext/Khoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="44854dee-00d9-4d36-9e22-6538ad396b4e" absoluteBounds="0.515, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="489e8abe-a8dd-43ff-9c10-2310533c8483" absoluteBounds="6, 4.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/QLSVDatabaseContextDataContext/MonHoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7288257-8501-4e7a-8167-cf055d84e27c" absoluteBounds="6.015, 5.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bb77fcb-d69f-415b-96c6-125fb2256e11" absoluteBounds="6, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/QLSVDatabaseContextDataContext/SinhVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f4e1c3c-7b69-445c-aeb1-b61b07881b62" absoluteBounds="6.015, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eace136c-3576-4cd4-8d4b-fb45c105cf29" absoluteBounds="3.25, 0.875, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/QLSVDatabaseContextDataContext/Lop" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8f124d3-f8d8-431c-b2f5-7992ec1a8ae7" absoluteBounds="3.265, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8 : 5.56814697265625); (9.75 : 5.56814697265625); (9.75 : 2.2612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLSVDatabaseContextDataContext/MonHoc/MonHoc_KetQua" />
+      <nodes>
+        <classShapeMoniker Id="489e8abe-a8dd-43ff-9c10-2310533c8483" />
+        <classShapeMoniker Id="5170bc18-7cb4-4f93-86d7-b332e9c59283" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8 : 1.56814697265625); (8.75 : 1.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLSVDatabaseContextDataContext/SinhVien/SinhVien_KetQua" />
+      <nodes>
+        <classShapeMoniker Id="9bb77fcb-d69f-415b-96c6-125fb2256e11" />
+        <classShapeMoniker Id="5170bc18-7cb4-4f93-86d7-b332e9c59283" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.25 : 1.56814697265625); (6 : 1.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLSVDatabaseContextDataContext/Lop/Lop_SinhVien" />
+      <nodes>
+        <classShapeMoniker Id="eace136c-3576-4cd4-8d4b-fb45c105cf29" />
+        <classShapeMoniker Id="9bb77fcb-d69f-415b-96c6-125fb2256e11" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 1.56814697265625); (3.25 : 1.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLSVDatabaseContextDataContext/Khoa/Khoa_Lop" />
+      <nodes>
+        <classShapeMoniker Id="0081f015-c082-4d96-b454-3307977e231b" />
+        <classShapeMoniker Id="eace136c-3576-4cd4-8d4b-fb45c105cf29" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
